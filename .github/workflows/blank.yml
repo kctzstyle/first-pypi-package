@@ -39,3 +39,9 @@ jobs:
           USERNAME: ${{ secrets.PYPI_USERNAME }}
         run: |
           echo ${{ env.USERNAME }}
+
+      - name: Run Environmnets Variable Test
+        env:
+          USERNAME: ${{ PyPI.PYPI_USERNAME }}
+        run: |
+          echo ${{ env.USERNAME }}
