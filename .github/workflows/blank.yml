@@ -38,4 +38,4 @@ jobs:
         env:
           USERNAME: ${{ PYPI_USERNAME }}
         run: |
-          echo $USERNAME
+          echo {{ env.USERNAME }}
