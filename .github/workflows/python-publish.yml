@@ -7,8 +7,10 @@ on:
   release:
     types: [created]
 
-jobs:
+jobs:  
   deploy:
+    environment: 
+      name: PyPI
 
     runs-on: ubuntu-latest
 
